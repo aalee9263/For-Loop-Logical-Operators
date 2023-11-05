@@ -35,14 +35,25 @@
         // console.log(`4 x ${ i + 1} =  ${4 * (i + 1)}`)
     }
         let temps = [28, 27, 31, 29, 32, 27]
-        min-value=min(temps)
-        print(min-value)
+        // min-value=min(temps)
+        // print(min-value)
 
-        for (let i=0 ; i<temps.length ; i++){
-         temps[i]=(temps[i] * 1.8) + 32;
-         console.log(temps[i]);
-        }
+        // for (let i=0 ; i<temps.length ; i++){
+        //  temps[i]=(temps[i] * 1.8) + 32;
+        //  console.log(temps[i]);
+        // }
 
+        // let farenheit = temps.map((eachItem, i)=>{
+        //     console.log(temps[i]);
+        //     return (eachItem * 1.8) + 32;
+        // })
+
+        let farenheit = temps.map((eachItem, i)=>{
+            console.log(temps[i]);
+            return (eachItem * 1.8) + 32;
+        })
+        console.log("temps:" , temps);
+        console.log("farenheit:" , farenheit);
 </script>
 </body>
 </html>
